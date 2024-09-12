@@ -48,4 +48,11 @@ from datetime import date, time
 from typing import Dict, Optional
 
 
+class Day:
+    def __init__(self, date_: date):
+        self.date_ = date_
+        self.slots: Dict[time, Optional[str]] = {}
+        self._init_slots()
 
+    def _init_slots(self):
+        pass
